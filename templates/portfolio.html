@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% extends "template.html" %}
+{% load staticfiles %}
+{% block body_block %}
+      <!-- PAGE TITLE SMALL -->
+      <div class="page-title-cont page-title-small grey-light-bg">
+        <div class="relative container align-left">
+          <div class="row">
+
+            <div class="col-md-8">
+              <h1 class="page-title">PORTFOLIO</h1>
+            </div>
+
+            <div class="col-md-4">
+              <div class="breadcrumbs">
+                <a href="index.html">Home</a><span class="slash-divider">/</span><span
+                  class="bread-current">PORTFOLIO<span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="grey-light-bg plr-30 plr-0-767 clearfix">
+        <!-- COTENT CONTAINER -->
+        <div class="white-bg plr-30 pt-50 pb-30">
+
+          <div class="relative">
+            <!-- PORTFOLIO FILTER -->
+            <div class="port-filter text-center text-left-767">
+              <a href="#" class="filter active" data-filter="*">All Projects</a>
+              <a href="#" class="filter" data-filter=".programming">Programming</a>
+              <a href="#" class="filter" data-filter=".web-design">Web Design</a>
+              <a href="#" class="filter" data-filter=".graphics">Graphics</a>
+              <a href="#" class="filter" data-filter=".maths">Mathematics</a>
+            </div>
+
+            <!-- ITEMS GRID -->
+            <ul class="port-grid display-hover-on-mobile port-grid-2 masonry clearfix" id="items-grid">
+
+              <!-- Item 1 -->
+              <li role="button" class="port-item mix programming">
+                <a href="portfolio-single1.html">
+                  <div class="port-img-overlay"><img class="port-main-img"
+                      src="images/tutorials_thumbs/python_basics.jpg" alt="img"></div>
+                </a>
+                <div class="port-overlay-cont">
+
+                  <div class="port-title-cont">
+                    <h3><a href="portfolio-single1.html">Python Tutorials</a></h3>
+                    <span><a href="#">Basic Topics</a></span>
+                  </div>
+                  <div class="port-btn-cont">
+                    <span class="popup-multi-gallery">
+                      <a href="images/tutorials_thumbs/python_basics.jpg" class="lightbox-item mr-20">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </a>
+                      <a href="images/blog/post-wide-3.jpg"></a>
+                      <a href="images/blog/post-wide-4.jpg"></a>
+                      <a href="images/blog/post-wide-5.jpg"></a>
+                    </span>
+                    <a href="portfolio-single1.html">
+                      <div aria-hidden="true" class="icon_link"></div>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+
+              <!-- Item 3 -->
+              <li role="button" class="port-item mix programming">
+                <a href="portfolio-single1.html">
+                  <div class="port-img-overlay">
+                    <img class="port-main-img" src="images/tutorials_thumbs/python_intermietiate.jpg" alt="img">
+                  </div>
+                </a>
+                <div class="port-overlay-cont">
+
+                  <div class="port-title-cont">
+                    <h3><a href="portfolio-single1.html">Python Tutorials</a></h3>
+                    <span><a href="#">Intermietiate Topics</a></span>
+                  </div>
+                  <div class="port-btn-cont">
+                    <span class="popup-multi-gallery">
+                      <a href="images/tutorials_thumbs/python_intermietiate.jpg" class="lightbox-item mr-20">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </a>
+                      <a href="images/blog/post-prev-1.jpg"></a>
+                      <a href="images/blog/post-prev-2.jpg"></a>
+                      <a href="images/blog/post-prev-3.jpg"></a>
+                    </span>
+                    <a href="portfolio-single1.html">
+                      <div aria-hidden="true" class="icon_link"></div>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+
+              <!-- Item 4 -->
+              <li role="button" class="port-item mix web-design">
+                <a href="portfolio-single1.html">
+                  <div class="port-img-overlay">
+                    <img class="port-main-img" src="images/tutorials_thumbs/web_guide.jpg" alt="img">
+                  </div>
+                </a>
+                <div class="port-overlay-cont">
+
+                  <div class="port-title-cont">
+                    <h3><a href="portfolio-single1.html">Web Site Guide</a></h3>
+                    <span><a href="#">Only Front-End</a></span>
+                  </div>
+                  <div class="port-btn-cont">
+                    <span class="popup-multi-gallery">
+                      <a href="images/tutorials_thumbs/web_guide.jpg" class="lightbox-item mr-20">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </a>
+                      <a href="images/portfolio/projects-6.jpg"></a>
+                      <a href="images/portfolio/projects-6-box.jpg"></a>
+                      <a href="images/portfolio/projects-8.jpg"></a>
+                    </span>
+                    <a href="portfolio-single1.html">
+                      <div aria-hidden="true" class="icon_link"></div>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+
+              <!-- Item 5 big -->
+              <li role="button" class="port-item mix maths">
+                <a href="portfolio-single1.html">
+                  <div class="port-img-overlay">
+                    <img class="port-main-img" src="images/tutorials_thumbs/trigonometry.jpg" alt="img">
+                  </div>
+                </a>
+                <div class="port-overlay-cont">
+
+                  <div class="port-title-cont">
+                    <h3><a href="portfolio-single1.html">Trigonometry</a></h3>
+                    <span><a href="#">Basics &amp; Advanced Topics</a></span>
+                  </div>
+                  <div class="port-btn-cont">
+                    <span class="popup-multi-gallery">
+                      <a href="images/tutorials_thumbs/trigonometry.jpg" class="lightbox-item mr-20">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </a>
+                      <a href="images/portfolio/projects-9.jpg"></a>
+                      <a href="images/portfolio/projects-10.jpg"></a>
+                      <a href="images/portfolio/projects-11.jpg"></a>
+                    </span>
+                    <a href="portfolio-single1.html">
+                      <div aria-hidden="true" class="icon_link"></div>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+
+              <!-- Item 6  -->
+              <li role="button" class="port-item mix graphics">
+                <a href="portfolio-single1.html">
+                  <div class="port-img-overlay">
+                    <img class="port-main-img" src="images/tutorials_thumbs/Ps_CGrading.jpg" alt="img">
+                  </div>
+                </a>
+                <div class="port-overlay-cont">
+
+                  <div class="port-title-cont">
+                    <h3><a href="portfolio-single1.html">PHOTOSHOP</a></h3>
+                    <span><a href="#">Color Grading</a></span>
+                  </div>
+                  <div class="port-btn-cont">
+                    <span class="popup-multi-gallery">
+                      <a href="images/tutorials_thumbs/Ps_CGrading.jpg" class="lightbox-item mr-20">
+                        <div aria-hidden="true" class="icon_search"></div>
+                      </a>
+                      <a href="images/blog/post-prev-4.jpg"></a>
+                      <a href="images/blog/post-prev-5.jpg"></a>
+                      <a href="images/blog/post-prev-6.jpg"></a>
+                    </span>
+                    <a href="portfolio-single1.html">
+                      <div aria-hidden="true" class="icon_link"></div>
+                    </a>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+{% endblock %}

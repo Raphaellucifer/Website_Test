@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+
+<!-- Head Section -->
+<head>
+    <title>C M | Crazy Minion </title>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="A non-profit organization">
+    <meta name="description" content="Tutorials on vfx and programming">
+    <meta name="author" content="Birnadin Erick">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAV ICONS -->
+    <link rel="shortcut icon" href="{% static "images/favicon/favicon.png" %}">
+    <link rel="apple-touch-icon" href={% static "images/favicon/icon_57px.png" %}>
+    <link rel="apple-touch-icon" sizes="72x72" href={% static "images/favicon/icon_72px.png" %}>
+    <link rel="apple-touch-icon" sizes="114x114" href={% static "images/favicon/icon_114px.png" %}>
+    <!-- CSS -->
+    <!-- REVO SLIDER CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="{% static "rs-plugin/css/settings.min.css" %}" media="screen"/>
+
+    <!--  BOOTSTRAP -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
+    <!--  GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700%7COpen+Sans:400,300,700' rel='stylesheet'
+          type='text/css'>
+
+    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->
+    <link rel="stylesheet" href="{% static "css/icons-fonts.css" %}">
+
+    <!--  CSS THEME -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <!-- ANIMATE -->
+    <link rel='stylesheet' href="{% static "css/animate.min.css" %}">
+
+    <!-- Magnific popup  in style.css	Owl Carousel Assets in style.css -->
+
+    <!-- CSS end -->
+
+    <!-- JS begin some js files in bottom of file-->
+
+    <!-- Modernizer -->
+    <!-- <script src="js/modernizr.js"></script> -->
+
+</head>
+<body>
+
+<!-- LOADER -->
+
+<div>
+    <div id="loader-overflow">
+        <div id="loader3">Please enable JavaScript, our website literally depends on it.</div>
+    </div>
+    {#{% block loader %}#}
+    {#{% endblock %}#}
+</div>
+
+<div id="wrap" class="boxed ">
+    <div class="grey-bg"> <!-- Grey BG  -->
+        <!-- HEADER -->
+        <header id="nav" class="header header-1">
+
+
+            <div class="header-wrapper">
+                <div class="container-m-30 clearfix">
+                    <div class="logo-row">
+
+                        <!-- LOGO -->
+                        <div class="logo-container-2 " id="top">
+                            <div class="logo-2">
+                                <a href="{% url "Crazy_Minion:home" %}" class="clearfix">
+                                    <img src="{% static "images/favicon/Logo_Navbar.png" %}" alt="Logo"
+                                         class="logo-img">
+
+                                </a>
+                            </div>
+                        </div>
+                        <!-- BUTTON -->
+                        <div class="menu-btn-respons-container">
+                            <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse"
+                                    data-target="#main-menu .navbar-collapse">
+                                <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN MENU CONTAINER -->
+                <div class="main-menu-container">
+
+                    <div class="container-m-30 clearfix">
+
+                        <!-- MAIN MENU -->
+                        <div id="main-menu">
+                            <div class="navbar navbar-default" role="navigation">
+
+                                <!-- MAIN MENU LIST -->
+                                <nav class="collapse collapsing navbar-collapse right-1024">
+                                    <ul class="nav navbar-nav">
+
+                                        <!-- MENU ITEM -->
+                                        <li class=" current">
+                                            <a href="{% url "Crazy_Minion:home" %}">
+                                                <div class="main-menu-title">HOME</div>
+                                            </a>
+
+                                        </li>
+
+                                        <!-- MENU ITEM -->
+                                        <li class=" ">
+                                            <a href="{% url "Crazy_Minion:tutorials" %}">
+                                                <div class="main-menu-title">TUTORIALS</div>
+                                            </a>
+                                        </li>
+
+                                        <!-- MEGA MENU ITEM -->
+                                        <li class="">
+                                            <a href="{% url "Crazy_Minion:about_us" %}">
+                                                <div class="main-menu-title">ABOUT US</div>
+                                            </a>
+
+                                        </li>
+
+                                        <!-- MENU ITEM -->
+                                        <li class="">
+                                            <a href="{% url "Crazy_Minion:portfolio" %}">
+                                                <div class="main-menu-title">PORTFOLIO</div>
+                                            </a>
+
+                                        </li>
+
+
+                                        <!-- MENU ITEM -->
+                                        <li id="" class="">
+                                            <a href="{% url "Crazy_Minion:get_to_us" %}">
+                                                <div class="main-menu-title">GET TO US</div>
+                                            </a>
+
+                                        </li>
+                                    </ul>
+
+                                </nav>
+
+                            </div>
+                        </div>
+                        <!-- END main-menu -->
+
+                    </div>
+                    <!-- END container-m-30 -->
+
+                </div>
+                <!-- END main-menu-container -->
+
+                <!-- SEARCH READ DOCUMENTATION -->
+                <ul class="cd-header-buttons">
+                    <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+                </ul> <!-- cd-header-buttons -->
+                <div id="cd-search" class="cd-search">
+                    <form class="form-search" id="searchForm"
+                          action=# method="get">
+                        <label for="q"></label><input type="text" value="" name="q" id="q" placeholder="Search...">
+                    </form>
+                </div>
+
+            </div>
+            {#             {% block navbar %}#}
+            {#            {% endblock %}#}
+            <!-- END header-wrapper -->
+
+        </header>
+    </div>
+</div>
+{% block body_block %}
+
+{% endblock %}
+<!-- NEWS LETTER -->
+<div class="page-section nl-cont">
+    <div class="container">
+        <div class="relative">
+            <div id="mc_embed_signup" class="nl-form-container clearfix">
+                <form action=#
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                      class="newsletterform validate" target="_blank" novalidate>
+                    <!-- EDIT THIS ACTION URL (add "post-json?u" instead of "post?u" and appended "&amp;c=?" to the end of this URL) -->
+                    <label for="mce-EMAIL"></label><input type="email" value="" name="EMAIL" class="email nl-email-input" id="mce-EMAIL"
+                                                          placeholder="Enter your email" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><label>
+                        <input type="text"
+                                                                               name="b_ba37086d08bdc9f56f3592af0_e38247f7cc"
+                                                                               tabindex="-1" value="">
+                    </label></div>
+
+                    <input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe"
+                           class="button medium gray">
+                </form>
+                <div id="notification_container"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER 2 -->
+
+<footer id="footer2" class="page-section pt-80 pb-50">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-3 widget">
+                <div class="logo-footer-cont">
+                    <a href="{% url "Crazy_Minion:home" %}">
+                        <img class="logo-footer" src="{% static "images/favicon/Logo_Navbar.png" %}" alt="logo">
+                    </a>
+                </div>
+                <div class="footer-2-text-cont">
+                    <address>
+                        117, David Rd.,<br>
+                        Jaffna, Northern Province, <br>
+                        Sri Lanka 40 000.
+                    </address>
+                </div>
+                <div class="footer-2-text-cont">
+                    94-76-581-2511
+                </div>
+                <div class="footer-2-text-cont">
+                    <a class="a-text" href="mailto:b.erick190@gmail.com">info@crazyminions.com</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-3 widget">
+                <h4>NAVIGATE</h4>
+                <ul class="links-list bold a-text-cont">
+                    <li><a href="{% url "Crazy_Minion:home" %}">HOME</a></li>
+                    <li><a href="{% url "Crazy_Minion:tutorials" %}">TUTORIALS</a></li>
+                    <li><a href="{% url "Crazy_Minion:about_us" %}">ABOUT US</a></li>
+                    <li><a href="{% url "Crazy_Minion:portfolio" %}">PORTFOLIO</a></li>
+                    <li><a href="{% url "Crazy_Minion:get_to_us" %}">GET TO US</a></li>
+                </ul>
+            </div>
+
+            {#                    <div class="col-md-3 col-sm-3 widget">#}
+            {#                        <h4>ABOUT US</h4>#}
+            {#                        <ul class="links-list a-text-cont">#}
+            {#                            <li><a href="about-us.html">COMPANY</a></li>#}
+            {#                            <li><a href="#">{{ test_var }}</a></li>#}
+            {#                            <li><a href="contactus.html">CONTACT</a></li>#}
+            {#                        </ul>#}
+            {#                    </div>#}
+
+            <div class="col-md-3 col-sm-3 widget">
+                <h4>RECENT POSTS</h4>
+                <div id="post-list-footer">
+
+                    <div class="post-prev-title">
+                        <h3><a class="a-text" href="{% url "Crazy_Minion:tutorial_post" %}">Python Data Structures</a>
+                        </h3>
+                    </div>
+                    <div class="post-prev-info">
+                        March 16
+                    </div>
+
+                    <div class="post-prev-title">
+                        <h3><a class="a-text" href="{% url "Crazy_Minion:tutorial_post" %}">Python Objects</a></h3>
+                    </div>
+                    <div class="post-prev-info">
+                        March 17
+                    </div>
+
+                    <div class="post-prev-title">
+                        <h3><a class="a-text" href="{% url "Crazy_Minion:tutorial_post" %}">Python Functions</a></h3>
+                    </div>
+                    <div class="post-prev-info">
+                        March 20
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-2-copy-cont clearfix">
+            <!-- Social Links -->
+            <div class="footer-2-soc-a right">
+                <a href="https://www.facebook.com/Crazy-Minion-100236768291379/" title="Facebook"
+                   target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UC5Raeh--AL1ReL6B7YmIEYg" title="YouTube"
+                   target="_blank"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/birnadin.e/" title="Instagram" target="_blank"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/crazyminion-birnadine" title="LinkedIn+" target="_blank"><i
+                        class="fa fa-linkedin"></i></a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="left">
+                <a class="footer-2-copy" href="{% url "Crazy_Minion:home" %}" target="_blank">&copy; CRAZY MINION
+                    2020</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<p id="back-top">
+    <a href="#top" title="Back to Top"><span class="icon icon-arrows-up"></span></a>
+</p>
+
+<!-- JS begin -->
+
+<!-- jQuery  -->
+<script src="{% static "js/jquery-1.11.2.min.js" %}"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+
+<!-- MAGNIFIC POPUP -->
+<script src={% static 'js/jquery.magnific-popup.min.js' %}></script>
+
+<!-- PORTFOLIO SCRIPTS -->
+<script src="{% static "js/isotope.pkgd.min.js" %}"></script>
+<script src="{% static "js/imagesloaded.pkgd.min.js" %}"></script>
+<script src="{% static "js/masonry.pkgd.min.js" %}"></script>
+
+<!-- COUNTER -->
+<script src="{% static "js/jquery.countTo.js" %}"></script>
+
+<!-- APPEAR -->
+<script src="{% static "js/jquery.appear.js" %}"></script>
+
+<!-- OWL CAROUSEL -->
+<script src="{% static "js/owl.carousel.min.js" %}"></script>
+
+<!-- MAIN SCRIPT -->
+<script src="{% static "js/main.js" %}"></script>
+{#{% block javascripts %}#}
+{#{% endblock %}#}
+
+<script src="{% static "rs-plugin/js/jquery.themepunch.tools.min.js" %}"></script>
+<script src="{% static "rs-plugin/js/jquery.themepunch.revolution-parallax.min.js" %}"></script>
+
+<!-- SLIDER REVOLUTION INIT  -->
+<script>
+
+    jQuery(document).ready(function () {
+        if ((navigator.appVersion.indexOf("Win") !== -1) && (ieDetect === false)) {
+            jQuery('#rs-fullscr').revolution(
+                {
+                    dottedOverlay: "none",
+                    delay: 16000,
+                    startwidth: 1170,
+                    startheight: 700,
+                    hideThumbs: 200,
+
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 5,
+
+                    //fullScreenAlignForce: "off",
+
+                    navigationType: "none",
+                    navigationArrows: "solo",
+                    navigationStyle: "preview4",
+
+                    hideTimerBar: "on",
+
+                    touchenabled: "on",
+                    onHoverStop: "on",
+
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+
+                    parallax: "scroll",
+                    parallaxBgFreeze: "on",
+                    parallaxLevels: [45, 40, 35, 50],
+                    parallaxDisableOnMobile: "on",
+
+                    keyboardNavigation: "off",
+
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 20,
+                    soloArrowLeftVOffset: 0,
+
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 20,
+                    soloArrowRightVOffset: 0,
+
+                    shadow: 0,
+                    fullWidth: "off",
+                    fullScreen: "on",
+
+                    spinner: "spinner4",
+
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+
+                    shuffle: "off",
+
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+                    //fullScreenOffsetContainer: ""
+                });
+        } else {
+            jQuery('#rs-fullscr').revolution(
+                {
+                    dottedOverlay: "none",
+                    delay: 16000,
+                    startwidth: 1170,
+                    startheight: 700,
+                    hideThumbs: 200,
+
+                    thumbWidth: 100,
+                    thumbHeight: 50,
+                    thumbAmount: 5,
+
+                    navigationType: "none",
+                    navigationArrows: "solo",
+                    navigationStyle: "preview4",
+
+                    hideTimerBar: "on",
+
+                    touchenabled: "on",
+                    onHoverStop: "on",
+
+                    swipe_velocity: 0.7,
+                    swipe_min_touches: 1,
+                    swipe_max_touches: 1,
+                    drag_block_vertical: false,
+
+                    parallax: "mouse",
+                    parallaxBgFreeze: "on",
+                    parallaxLevels: [0],
+                    parallaxDisableOnMobile: "on",
+
+                    keyboardNavigation: "off",
+
+                    navigationHAlign: "center",
+                    navigationVAlign: "bottom",
+                    navigationHOffset: 0,
+                    navigationVOffset: 20,
+
+                    soloArrowLeftHalign: "left",
+                    soloArrowLeftValign: "center",
+                    soloArrowLeftHOffset: 20,
+                    soloArrowLeftVOffset: 0,
+
+                    soloArrowRightHalign: "right",
+                    soloArrowRightValign: "center",
+                    soloArrowRightHOffset: 20,
+                    soloArrowRightVOffset: 0,
+
+                    shadow: 0,
+                    fullWidth: "off",
+                    fullScreen: "on",
+
+                    spinner: "spinner4",
+
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+
+                    shuffle: "off",
+
+                    autoHeight: "off",
+                    forceFullWidth: "off",
+
+                    hideThumbsOnMobile: "off",
+                    hideNavDelayOnMobile: 1500,
+                    hideBulletsOnMobile: "off",
+                    hideArrowsOnMobile: "off",
+                    hideThumbsUnderResolution: 0,
+
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    startWithSlide: 0,
+
+                });
+        }
+    });	//ready
+
+</script>
+
+<!-- JS end -->
+
+</body>
+</html>
